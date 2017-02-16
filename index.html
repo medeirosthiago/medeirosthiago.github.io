@@ -1,23 +1,125 @@
----
-layout: default
----
+<!DOCTYPE html> <html lang=en>
+  <head>
+    <title>Thiago Medeiros</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Nunito" rel="stylesheet">
+  </head>
 
-<div class="home">
+  <body>
 
-  <h1 class="page-heading">Posts</h1>
+    <!-- HEAD ~ some text about me (shortly just a phrase) -->
+    <div id="home">
+      <h2>Hello.<br>
+          I'm <span>Thiago Medeiros</span>, a<br>
+          <span class="rocks">full stack web developer</span> <span>padawan</span><br>
+          living in Foz do Iguaçu, Brazil</h2>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <!-- SQUARES ~ squares with portfolios -->
+    <div id="portfolio">
+      <h3>Portfolio</h3>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <div class="portfolio-images">
+        <div class="row">
+            <div class="col-md-3" id="1">
+              <a href="https://codepen.io/medeirosthiiago/pen/mOdKvN">
+                <img style="height: 350px" src="https://cloud.githubusercontent.com/assets/4070127/21870877/d316fae2-d845-11e6-85f6-fb02895d2034.png" alt="First portfolio">
+              </a>
+            </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+            <div class="col-md-3" id="2">
+              <a href="https://github.com/medeirosthiiago/glue-grade/blob/master/src/twitter/notebooks/tcc-twitter-banca-2.ipynb">
+                <img style="height: 350px" src="https://cloud.githubusercontent.com/assets/4070127/22526569/e21a0778-e8b2-11e6-9dd1-02f79813f68c.png" alt="First portfolio">
+              </a>
+            </div>
 
-</div>
+            <div class="col-md-3" id="3">
+              <a href="">
+                <img style="height: 350px" src="https://cloud.githubusercontent.com/assets/4070127/22526619/19405b76-e8b3-11e6-8afa-eb8b962e32f5.jpg" alt="First portfolio">
+              </a>
+            </div>
+
+            <div class="col-md-3" id="4">
+              <a href="">
+                <img style="height: 350px" src="https://cloud.githubusercontent.com/assets/4070127/22526619/19405b76-e8b3-11e6-8afa-eb8b962e32f5.jpg" alt="First portfolio">
+              </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3" id="5">
+              <a href="">
+                <img style="height: 350px" src="https://cloud.githubusercontent.com/assets/4070127/22526619/19405b76-e8b3-11e6-8afa-eb8b962e32f5.jpg" alt="First portfolio">
+              </a>
+            </div>
+
+            <div class="col-md-3" id="6">
+              <a href="">
+                <img style="height: 350px" src="https://cloud.githubusercontent.com/assets/4070127/22526619/19405b76-e8b3-11e6-8afa-eb8b962e32f5.jpg" alt="First portfolio">
+              </a>
+            </div>
+
+            <div class="col-md-3" id="7">
+              <a href="">
+                <img style="height: 350px" src="https://cloud.githubusercontent.com/assets/4070127/22526619/19405b76-e8b3-11e6-8afa-eb8b962e32f5.jpg" alt="First portfolio">
+              </a>
+            </div>
+
+            <div class="col-md-3" id="8">
+              <a href="">
+                <img style="height: 350px" src="https://cloud.githubusercontent.com/assets/4070127/22526619/19405b76-e8b3-11e6-8afa-eb8b962e32f5.jpg" alt="First portfolio">
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME ~ pffff -->
+    <div id="aboutme">
+      <h3>About me</h3>
+
+      <div class="col-md-4">
+        <div class="picture">
+          <img style="height: 350px" src="https://cloud.githubusercontent.com/assets/4070127/22565554/afb0d66e-e96f-11e6-848e-c131027e14eb.png" alt="My personal picture, a face and blue t-shirt">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="content-text">
+          <p>I am a Computer Science graduated from Brazil, searching for new <span class="rocks">challenges</span> and <span class="rocks">opportunities</span> as a web developer in order to improve myself, develop new skills and earn some <span>pizza</span>!!</p>
+
+          <p>I spend my free time consuming fiction books, listening to podcasts and groking <span class="rocks">vim</span>.</p>
+
+          <p>At my hack time, I'm having fun with <span>JavaScript</span>, <span>Python</span> and <span>Java</span>. (Yeap, in this order!)</p>
+        </div>
+
+        <div id="contact" class="list-link">
+          <ul>
+            <li><a href="https://github.com/medeirosthiiago"><img src="https://cloud.githubusercontent.com/assets/4070127/22607686/1ae377fe-ea40-11e6-8b1d-e9f3f0da57b3.png" alt="github icon"></a></li>
+            <li><a href="https://twitter.com/medeirosthiiago"><img src="https://cloud.githubusercontent.com/assets/4070127/22607687/1af23050-ea40-11e6-82ef-fc212f20a7a9.png" alt="twitter icon"></a></li>
+            <li><a href="https://br.linkedin.com/in/medeirosthiago"><img src="https://cloud.githubusercontent.com/assets/4070127/22607688/1b00cc64-ea40-11e6-8b19-254c6c2b1a1b.png" alt="linkedin icon"></a></li>
+          <ul>
+        </div>
+      </div>
+    </div>
+    <!-- CLOUSE ABOUT ME -->
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- <footer> -->
+    <!--   Made with a bunch of &#127829; -->
+    <!-- </footer> -->
+
+</body>
+</html>
