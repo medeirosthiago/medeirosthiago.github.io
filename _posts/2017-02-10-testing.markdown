@@ -1,9 +1,0 @@
-Testando jekyll!
-
-## Head
-
-```javascript
-function testando() {
-  console.log('heya!!');
-}
-```
