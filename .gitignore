@@ -1,5 +1,10 @@
-_site/
-_drafts/
-.sass-cache/
+_site
+.sass-cache
 .jekyll-metadata
-tmplates/
+draft/
+_site/*
+_drafts/*
+.sass-cache/*
+.DS_Store
+*.db
+example*
